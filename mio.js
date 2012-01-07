@@ -11,8 +11,7 @@ $(document).ready(function() { // when document has loaded
 	$('a#remove').click(function() { // similar to the previous, when you click remove link
 		if(i > 1) { // if you have at least 1 input on the form
 			
-			this.parentNode.remove(); //remove the last input
-	 //deduct 1 from i so if i = 3, after i--, i will be i = 2
+			this.parentNode.remove(); 
 		}
 	});
 
