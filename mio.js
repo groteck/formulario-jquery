@@ -8,17 +8,17 @@ $(document).ready(function() { // when document has loaded
 		$('a#remove').click(function() { // similar to the previous, when you click remove link
 			if(i > 1) { // if you have at least 1 input on the form
 				
-				 this.parentNode.remove(); 
+				 this.parentNode.parentNode.removeChild(this.parentNode);//ESTo deberia tirar //remove the last input 
 			}
 		});
 	});
 
-	$('a#remove').click(function() { // similar to the previous, when you click remove link
-		if(i > 1) { // if you have at least 1 input on the form
-			
-			 $("div").remove(); 
-		}
-	});
+	// $('a#remove').click(function() { // similar to the previous, when you click remove link
+	// 	if(i > 1) { // if you have at least 1 input on the form
+	// 		
+	// 		 $("div").remove(); 
+	// 	}
+	// });
 
 	$('a.reset').click(function() {
 		while(i > 2) { // while you have more than 1 input on the page
